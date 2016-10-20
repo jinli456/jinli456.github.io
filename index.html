@@ -1,10 +1,346 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>李晋莉个人主页</title>
+    <link href="./css/index.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="./css/owl.carousel.css" rel="stylesheet" type="text/css" media="all">
+    <script src="./js/jquery.js"> </script>
+    <script type="text/javascript" src="./js/move-top.js"></script>
+    <script type="text/javascript" src="./js/easing.js"></script>
+    <script type="text/javascript" src="./js/jquery.mixitup.min.js"></script>
+    <script src="./js/index.js"></script>
 </head>
 <body>
-	<h1>欢迎来到我的主页</h1>
+<div id="home" class="header-top">
+    <div class="container">
+        <div class="header-sub-text">
+            <h2>Welcome To My Home</h2>
+            <p>我是李晋莉  求职：前端工程师
+                <small>我相信：越努力，越幸运！</small></p>
+        </div>
+        <div class="header-top-grids">
+            <div class="col-md-12 about-nav5">
+                <a class="scroll" href="#portfolio"><span class="nav-icon5"> </span><label>Web项目</label></a>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+        <div class="header-bottom-grids">
+            <div class="col-md-6 left-grid text-left">
+                <div class="about-nav">
+                    <a class="scroll" href="#about"><span class="nav-icon"> </span><label>关于我</label></a>
+                </div>
+                <div class="about-nav1">
+                    <a class="scroll" href="#services"><span class="nav-icon1"> </span><label class="jineng">技能了解</label></a>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+            <div class="col-md-6 right-grid text-right">
+                <div class="about-nav2">
+                    <a class="scroll" href="#team"><span class="nav-icon2"> </span><label>作品展示</label></a>
+                </div>
+                <div class="about-nav3">
+                    <a class="scroll" href="#contact"><span class="nav-icon3"> </span><label>联系方式</label></a>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+        <div class="arrow-grid">
+            <div class="arrow">
+                <a class="scroll" href="#header-nav"><span> </span></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--导航栏 menu-->
+<div id="header-nav" class="header-nav">
+    <div class="top-nav">
+        <nav>
+            <div class="logo">
+                <h2>MENU</h2>
+            </div>
+            <span class="menu"></span>
+            <ul>
+                <li class="active"><a class="scroll" href="#home">主页</a></li>
+
+                <li><a class="scroll" href="#services">技能了解</a></li>
+                <li><a class="scroll" href="#team">作品展示</a></li>
+                <li><a class="scroll" href="#portfolio">Web项目</a></li>
+                <li class="contact"><a class="scroll" href="#contact">联系方式</a></li>
+                <div class="clearfix"> </div>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<!--内容-->
+<div id="services" class="content-skills">
+    <div class="container">
+        <div class="content-skills-text">
+            <h2>My <small>skills</small></h2>
+            <span> </span>
+        </div>
+        <div class="col-md-4">
+            <div class="progress-head">
+                <h3>HTML/HTML5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;90%</h3>
+                <p class="percent"></p>
+                <div class="clearfix"></div>
+                <div class="progressy1"><p></p></div>
+            </div>
+            <div class="progress-head">
+                <h3>node.js&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;80%</h3>
+                <p class="percent"></p>
+                <div class="clearfix"></div>
+                <div class="progressy3"><p></p></div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="progress-head">
+                <h3>CSS/CSS3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;80%</h3>
+                <p class="percent"></p>
+                <div class="clearfix"></div>
+                <div class="progressy3"><p></p></div>
+            </div>
+            <div class="progress-head">
+                <h3>Ajax/Mysql&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;84%</h3>
+                <p class="percent"></p>
+                <div class="clearfix"></div>
+                <div class="progressy4"><p></p></div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="progress-head">
+                <h3>JavaScipt/jQuery&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;80%</h3>
+                <p class="percent"></p>
+                <div class="clearfix"></div>
+                <div class="progressy3"><p></p></div>
+            </div>
+            <div class="progress-head">
+                <h3>PS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;84%</h3>
+                <p class="percent"></p>
+                <div class="clearfix"></div>
+                <div class="progressy4"><p></p></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="team" class="content-team">
+    <!--- container ---->
+    <div class="container">
+        <div class="content-team-text">
+            <h2>PS作品 <small>show</small></h2>
+            <span> </span>
+        </div>
+        <div class="row">
+            <script>
+                $(document).ready(function() {
+                    $("#owl-demo1").owlCarousel({
+                        items : 3,
+                        lazyLoad : true,
+                        autoPlay : true,
+                        navigation : true,
+                        navigationText :  true,
+                        pagination : false,
+                    });
+                });
+            </script>
+            <div id="owl-demo1" class="owl-carousel">
+                <div class="item">
+                    <div class="team-left-grid">
+                        <img src="./img/icon/1.png">
+
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="team-left-grid">
+                        <img src="./img/icon/2.png">
+
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="team-left-grid">
+                        <img src="./img/icon/3.png">
+
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="team-left-grid">
+                        <img src="./img/icon/4.png">
+
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="team-left-grid">
+                        <img src="./img/icon/5.png">
+
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="team-left-grid">
+                        <img src="./img/icon/6.png">
+
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="team-left-grid">
+                        <img src="./img/icon/7.png">
+
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="team-left-grid">
+                        <img src="./img/icon/8.png">
+
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="team-left-grid">
+                        <img src="./img/icon/9.png">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--- container ---->
+    </div>
+    <!--- content-team ---->
+</div>
+<!--轮播引入-->
+<link href="./css/owl.carousel.css" rel="stylesheet">
+<script src="./js/owl.carousel.js"></script>
+<div class="container tupianbox">
+    <div id="portfolio" class="portfolio">
+        <div class="port-text">
+            <h2>Web<small>项目</small></h2>
+            <span class="folio"> </span>
+        </div>
+        <div  class="section" id="section-3">
+            <ul id="filters" class="clearfix wow bounceIn" data-wow-delay="0.4s">
+                <li><span class="filter active" data-filter="app card icon logo fun">ALL</span></li>
+                <li><span class="filter" data-filter="app">WEB</span></li>
+                <li><span class="filter" data-filter="card">APPLY</span></li>
+                <li><span class="filter" data-filter="fun">GAME</span></li>
+            </ul>
+            <div id="portfoliolist">
+                <div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+                    <div class="portfolio-wrapper wow bounceIn" data-wow-delay="0.4s">
+                        <a href="https://jinli456.github.io/apple" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+                            <img src="./img/pingguo.jpg" class="img-responsive" alt=""/></a>
+                        <a href="https://jinli456.github.io/apple"><p>苹果首页</p><h3>APPLE</h3></a>
+
+                    </div>
+                    <!--<div class="mask">
+                        <h3>苹果首页</h3>
+                        <div class="bt"></div>
+                        <div class="bl"></div>
+                        <div class="br"></div>
+                        <div class="bb"></div>
+                    </div>-->
+                </div>
+                <div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+                    <div class="portfolio-wrapper wow bounceIn" data-wow-delay="0.4s">
+                        <a href="https://jinli456.github.io/yintai" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+                            <img src="./img/yintai.jpg" class="img-responsive" alt=""/></a>
+                        <a href="https://jinli456.github.io/yintai"><p>银泰</p><h3>Yintai</h3></a>
+
+                    </div>
+                    <!--<div class="mask"></div>-->
+                </div>
+                <div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+                    <div class="portfolio-wrapper wow bounceIn" data-wow-delay="0.4s">
+                        <a href="https://jinli456.github.io/tianmao" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+                            <img src="img/tianmao.jpg" class="img-responsive" alt=""/></a>
+                        <a href="https://jinli456.github.io/tianmao"><p>天猫</p><h3>tmall</h3></a>
+
+                    </div>
+                </div>
+                <div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+                    <div class="portfolio-wrapper wow bounceIn" data-wow-delay="0.4s">
+                        <a href=" https://ljllianxiren.duapp.com " class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+                            <img src="img/lianxiren.png" class="img-responsive" alt=""/></a>
+                        <a href="https://ljllianxiren.duapp.com "><p>联系人</p><h3>Lianxiren</h3></a>
+
+                    </div>
+                </div>
+                <div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+                    <div class="portfolio-wrapper wow bounceIn" data-wow-delay="0.4s">
+                        <a href="http://localhost/" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+                            <img src="img/feilong.JPEG" class="img-responsive" alt=""/></a>
+                        <a href="http://localhost/"><p>飞龙压缩</p><h3>feilong</h3></a>
+
+                    </div>
+                </div>
+
+                <div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+                    <div class="portfolio-wrapper wow bounceIn" data-wow-delay="0.4s">
+                        <a href="https://jinli456.github.io/music" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+                            <img src="./img/yinyue.png" class="img-responsive" alt=""/></a>
+                        <a href="https://jinli456.github.io/music"><p>qq音乐播放器</p><h3>qq music</h3></a>
+                    </div>
+                </div>
+
+                <div class="portfolio fun mix_all" data-cat="fun" style="display: inline-block; opacity: 1;">
+                    <div class="portfolio-wrapper wow bounceIn" data-wow-delay="0.4s">
+                        <a href="https://jinli456.github.io/snake" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+                            <img src="./img/tanchishe.jpg" class="img-responsive" alt=""/></a>
+                        <a href="https://jinli456.github.io/snake"><p>贪吃蛇</p><h3>Snake</h3></a>
+                    </div>
+                </div>
+                <div class="portfolio fun mix_all" data-cat="fun" style="display: inline-block; opacity: 1;">
+                    <div class="portfolio-wrapper wow bounceIn" data-wow-delay="0.4s">
+                        <a href="https://jinli456.github.io/wuziqi" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+                            <img src="./img/wuziqi.jpg" class="img-responsive" alt=""/></a>
+                        <a href="https://jinli456.githu.io/wuziqi"><p>五子棋</p><h3>five-in-a-row</h3></a>
+                    </div>
+                </div>
+
+
+                <div class="portfolio fun mix_all" data-cat="fun" style="display: inline-block; opacity: 1;">
+                    <div class="portfolio-wrapper wow bounceIn" data-wow-delay="0.4s">
+                        <a href="https://jinli456.github.io/poker" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+                            <img src="./img/puke.jpg" class="img-responsive" alt=""/></a>
+                        <a href="https://jinli456.github.io/poker"><p>扑克牌</p><h3>Poker</h3></a>
+                    </div>
+                </div>
+               </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- Script for gallery Here-->
+
+<!--底部联系我-->
+<div id="contact" id="arrow" class="content-Get-in-touch">
+    <!--- container ---->
+    <div class="container">
+        <div class="Get-in-touch-text">
+            <h2>Contact <small>me</small></h2>
+            <span class="portfolio"> </span>
+        </div>
+        <div class="Get-in-touch-grids">
+            <div class="col-md-4">
+                <i class="iconfont icon-dizhi3">地址</i>
+                <p>现居地:太原市</p>
+            </div>
+            <div class="col-md-4">
+                <i class="iconfont icon-youxiang3">邮箱</i>
+                <p>1484225473@qq.com</p>
+            </div>
+            <div class="col-md-4">
+                <i class="iconfont icon-dianhua2">电话</i>
+                <p>13466825640</p>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+    <!--- container ---->
+</div>
+<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
 </body>
 </html>
